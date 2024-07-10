@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       body{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(https://images.alphacoders.com/134/1342854.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .fa-youtube-play{
+        position: absolute;
+            left: 600px;
+            top: 140px;
+
+       }
+        h1{
+            position: absolute;
+            left: 650px;
+            top: 100px;
+            font-size: 50px;
+            color: black;
+            
+            }
+        input[type=text] {
+            border: 0.5px solid rgb(116, 114, 114);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px gray inset;
+            width: 400px;
+            position: relative;
+            left: 500px;
+            top: 200px;
+
+
+        }
+
+        input:focus {
+            outline: 0;
+            border-color: rgb(37, 125, 239);
+            display: inline-block;
+        }
+
+        .n button {
+            position: relative;
+            left: 500px;
+            top: 200px;
+            padding: 15px;
+            margin-left: -4px;
+            margin-top: -4px;
+            background: #ddd;
+            font-size: 17px;
+            cursor: pointer;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-bottom: 9.5px;
+            padding-top: 6.5px;
+            border:1px solid lightslategray;
+
+        }
+
+        .n .tooltiptext {
+            visibility: hidden;
+            width: 90px;
+            background-color: rgb(139, 144, 148);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 4px 0;
+
+            /* Position the tooltip */
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .n:hover .tooltiptext {
+            visibility: visible;
+            position: relative;
+            left: 500px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+     <i class="fa fa-youtube-play" style="font-size:48px;color:red"></i>
+    <h1>YouTube</h1>
+    <div class="n">
+        
+        <input type="text" name="search-outline" id="search-outline" placeholder="search">
+
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <span class="tooltiptext">search</span>
+    </div>
+</body>
+
+</html>
